@@ -21,7 +21,9 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../lib/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="./map.css" />
   </head>
   <body>
     <header>
@@ -34,45 +36,22 @@
     </header>
     <nav>
       <ul class="menu">
-        <li><a href="#">Strona główna</a></li>
-        <li><a href="./project_info/project.html">O projekcie</a></li>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li><a href="../project_info/project.html">O projekcie</a></li>
         <li><a href="#">Materiały</a></li>
         <li><a href="#">Kontakt</a></li>
       </ul>
     </nav>
     <!-- tutaj zaczyna się treść strony  -->
-    <div class="categories">
-      <header>
-        <h1>Witaj na stronie!</h1>
-        <p>
-          Zapraszam do zapoznania się z materiałami umieszcznonymi na stronie :)
-        </p>
-      </header>
-      <section id="main_section">
-        <div class="subject">
-          <figure>
-            <a href="./map/map.html">
-              <img src="img/cartographer (1).png" />
-            </a>
-          </figure>
-        </div>
 
-        <div class="subject">
-          <figure>
-            <a href="./project_info/project.html">
-              <img src="img/cartographer (1).png" />
-            </a>
-          </figure>
-        </div>
-
-        <div class="subject">
-            <figure>
-              <a href="./project_info/project.html">
-                <img src="img/cartographer (1).png" />
-              </a>
-            </figure>
-          </div>
-      </section>
+    <div class="container">
+      <div id="lista">Aktualności z wojny:</div>
+      <div id="mymap"></div>
     </div>
+
+    <script src="../lib/leaflet/leaflet.js"></script>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../main.js"></script>
+    <script src="./dane.geojson"></script>
   </body>
 </html>
