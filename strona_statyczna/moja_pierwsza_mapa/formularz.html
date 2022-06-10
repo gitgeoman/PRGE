@@ -1,0 +1,47 @@
+<?php
+	session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Programowanie Geoportali</title>
+    <meta
+      name="description"
+      content="Strona edukacyjna poświącona
+         analizom terenu stanowiąca część projektu"
+    />
+    <meta
+      name="keywords"
+      content="geodezja, geoinformatyka, topografia, kartografia"
+    />
+    <meta name="author" content="Marek" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./mapa.css" />
+
+    <link rel="stylesheet" href="../lib/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <div>
+        <form method="post" action="../query_insert.php">
+            <input type="text" name="zmienna" value="111"/>
+            <button>INSERT</button>
+        </form>
+    
+    </div>
+
+    <script src="../lib/leaflet/leaflet.js"></script>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <!-- <script src="./mapa.js"></script> -->
+    <script src="./aktualnosci.js"></script>
+  </body>
+</html>
